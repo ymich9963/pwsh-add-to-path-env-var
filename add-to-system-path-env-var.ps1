@@ -16,7 +16,7 @@ if ($Bin_path_check.Count -igt 1) {
 } else {
     Write-Output "Detected no previous install."
     Write-Output "Adding executable to system Path environment variable."
-    $New_Path_Value = $Sys_Env_Path_Value.Path + $Bin_install_path + ";" 
+    $New_Path_Value = $Sys_Env_Path_Value.Path + ";" + $Bin_install_path + ";" 
     Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment\' -Name Path -Value $New_Path_Value
 }
 
