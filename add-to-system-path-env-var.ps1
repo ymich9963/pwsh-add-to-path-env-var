@@ -21,5 +21,8 @@ if ($Bin_path_check.Count -igt 1) {
 }
 
 Write-Output "Succesfully installed application."
+
+Read-Host "Press Enter to exit"
+
 Exit
 
