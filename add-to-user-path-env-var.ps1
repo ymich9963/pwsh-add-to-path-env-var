@@ -1,4 +1,4 @@
-$Bin_install_path = 'C:\Program Files\test'
+$Bin_install_path = $env:USERPROFILE + '\AppData\Local\test'
 
 # Get user path variable
 $User_Env_Path_Value = Get-ItemProperty -Path 'HKCU:\Environment' -Name Path 
